@@ -80,6 +80,12 @@ body {
     border-radius: 50%;
 }
 
+.venus::before, .mars::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
 .earth::before {
     top: 2.8em;
     right: 2.8em;
@@ -115,6 +121,7 @@ body {
     height: 2.8em;
     background-color: red;
 }
+
 
 
 @keyframes orbit {
