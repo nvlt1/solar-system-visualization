@@ -34,6 +34,14 @@ body {
     border-radius: 50%;
 }
 
+.venus, .mars {
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+
 .earth {
     top: 5em;
     left: 5em;
@@ -48,6 +56,22 @@ body {
     width: 8em;
     height: 8em;
     animation: orbit 2.7s linear infinite;
+}
+
+.venus {
+    top: 10em;
+    left: 10em;
+    width: 25em;
+    height: 25em;
+    animation: orbit 22.7s linear infinite;
+}
+
+.mars {
+    top: 0em;
+    left: 35em;
+    width: 35em;
+    height: 35em;
+    animation: orbit 78.5s linear infinite;
 }
 
 .earth::before, .moon::before {
@@ -71,6 +95,27 @@ body {
     height: 1.2em;
     background-color: silver;
 }
+
+.venus::before {
+    content: '';
+    position: absolute;
+    top: 2.2em;
+    left: 2.2em;
+    width: 2.5em;
+    height: 2.5em;
+    background-color: peachpuff;
+}
+
+.mars::before {
+    content: '';
+    position: absolute;
+    top: 2.5em;
+    left: 2.5em;
+    width: 2.8em;
+    height: 2.8em;
+    background-color: red;
+}
+
 
 @keyframes orbit {
     to {
